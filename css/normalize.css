@@ -39,6 +39,28 @@ body {
   font-family: Arial, sans-serif;
   background: var(--bg-main);
   color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  min-width: 320px;
+}
+
+.container {
+  padding: 0 160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.font-prata {
+  font-family: "Prata";
+  line-height: 120%;
+}
+
+.btn-primary {
+  background: var(--main-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @font-face {

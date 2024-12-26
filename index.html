@@ -7,25 +7,164 @@
     <title>MST - Test Project</title>
   </head>
   <body>
-    <section class="main" id="main">
-      <div class="main-text">
-        <nav class="nav">
-          <h1 class="nav__logo">Гармония</h1>
-          <ul class="nav__list">
-            <li class="nav__list-item">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <h1 class="header__logo font-prata">
+            <a href="/"> Гармония </a>
+          </h1>
+          <ul class="header__list">
+            <li class="header__list-item">
               <a href="#about">О нас</a>
             </li>
-            <li class="nav__list-item">
+            <li class="header__list-item">
               <a href="#form">Связаться с нами</a>
             </li>
-            <li class="nav__list-item">
+            <li class="header__list-item">
               <a href="#footer">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <section class="main" id="main">
+      <div class="container">
+        <div class="main__inner">
+          <h2 class="main__title font-prata">
+            Добро пожаловать в&nbsp;ЖК &laquo;Гармония&raquo;
+          </h2>
+          <p class="main__subtitle">
+            &mdash;&nbsp;ваш идеальный уголок для жизни в&nbsp;комфорте
+            и&nbsp;стиле!
+          </p>
+          <ul class="main__list">
+            <li class="main__list-item">
+              <img src="/img/main/check.svg" alt="" />
+              <span class="font-prata">100%</span
+              ><span>уют и&nbsp;комфорт</span>
+            </li>
+            <li class="main__list-item">
+              <img src="/img/main/check.svg" alt="" />
+              <span class="font-prata">5</span><span>минут до&nbsp;парка</span>
+            </li>
+            <li class="main__list-item">
+              <img src="/img/main/check.svg" alt="" />
+              <span class="font-prata">24/7</span><span>безопасность</span>
+            </li>
+          </ul>
+          <button class="main__btn btn-primary">Позвонить</button>
+        </div>
       </div>
       <div class="main-img">
-        <img src="/img/main-bg.jpg" alt="" />
+        <img src="/img/main/bg.jpg" alt="" />
+      </div>
+    </section>
+    <!-- End main & navigation panel -->
+
+    <!-- About -->
+    <section class="about">
+      <div class="about__img about__img--first">
+        <img src="/img/about/first.jpg" alt="" />
+      </div>
+      <div class="about__middle">
+        <ul class="about__list">
+          <li class="about__list-item">
+            <img src="/img/about/lotus.svg" alt="" />
+            <span
+              >ЖК&nbsp;&laquo;Гармония&raquo; находится в&nbsp;живописном
+              районе, всего в&nbsp;5&nbsp;минутах пешком от&nbsp;ближайшего
+              парка и&nbsp;в&nbsp;10&nbsp;минутах от&nbsp;центра города.
+              Отличная транспортная доступность обеспечивает легкий доступ
+              к&nbsp;основным магистралям и&nbsp;общественному транспорту.</span
+            >
+          </li>
+          <li class="about__list-item">
+            <img src="/img/about/lotus.svg" alt="" />
+            <span
+              >В&nbsp;жилом комплексе представлены квартиры различных
+              планировок&nbsp;&mdash; от&nbsp;уютных студий до&nbsp;просторных
+              трехкомнатных. Каждая квартира оснащена современными инженерными
+              системами и&nbsp;выполнена с&nbsp;использованием качественных
+              материалов.</span
+            >
+          </li>
+          <li class="about__list-item">
+            <img src="/img/about/lotus.svg" alt="" />
+            <span
+              >На&nbsp;территории&nbsp;ЖК предусмотрены все необходимые
+              удобства: магазины, кафе, спортивные площадки и&nbsp;детские
+              игровые зоны. В&nbsp;шаговой доступности находятся школы
+              и&nbsp;детские сады, что делает комплекс идеальным для семей
+              с&nbsp;детьми.</span
+            >
+          </li>
+          <li class="about__list-item">
+            <img src="/img/about/lotus.svg" alt="" />
+            <span
+              >ЖК&nbsp;&laquo;Гармония&raquo; предлагает круглосуточную охрану
+              и&nbsp;видеонаблюдение, а&nbsp;также благоустроенные общие зоны.
+              Просторные дворы без автомобилей создают безопасную
+              и&nbsp;комфортную атмосферу для прогулок и&nbsp;отдыха.</span
+            >
+          </li>
+        </ul>
+        <button class="about__btn btn-primary">Позвонить</button>
+      </div>
+      <div class="about__img about__img--second">
+        <img src="/img/about/second.jpg" alt="" />
+      </div>
+    </section>
+    <!-- End about -->
+
+    <section class="form-section">
+      <div class="container">
+        <div class="form-section__inner">
+          <form class="form">
+            <h2 class="form__title font-prata">
+              Оставьте <br />
+              свои контактные данные
+            </h2>
+            <div class="form__items">
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form__checkbox">
+              <label class="form__checkbox-label" for="form-checkbox">
+                <span class="form__checkbox-icon"></span>
+                <span class="form__checkbox-text">
+                  Я принимаю <a href="">политику конфиденциальности</a>
+                </span>
+              </label>
+              <input
+                type="checkbox"
+                name="form-checkbox"
+                id="form-checkbox"
+                class="form__checkbox-input"
+                required
+                hidden
+              />
+            </div>
+
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
 
