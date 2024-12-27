@@ -41,8 +41,9 @@ body {
   color: var(--main-white);
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 5.208vw;
   min-width: 320px;
+  position: relative;
 }
 
 .container {
