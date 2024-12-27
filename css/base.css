@@ -8,9 +8,11 @@
   left: 0;
   right: 0;
   z-index: 5;
+  transition: 0.2s;
 }
 
 .header.header--scrolled {
+  padding: 0;
   background: var(--bg-darker);
 }
 
@@ -30,6 +32,7 @@
 }
 
 .header__list-item {
+  font-size: 16px;
   font-style: italic;
 }
 
