@@ -51,6 +51,11 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
 .font-prata {
   font-family: "Prata";
   line-height: 120%;
