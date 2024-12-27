@@ -183,7 +183,7 @@
 
 /* Form */
 .form-section__inner {
-  background: var(--main-white) url("/img/form/bg.png") no-repeat right / contain;
+  background: var(--main-white) url("../img/form/bg.png") no-repeat right / contain;
   padding: 72px 134px;
   border-radius: 30px;
   position: relative;
@@ -194,7 +194,7 @@
   content: "";
   width: 600px;
   height: 686px;
-  background: url("/img/form/girl.png") no-repeat center 33%;
+  background: url("../img/form/girl.png") no-repeat center 33%;
   bottom: 0;
   right: 90px;
 }
