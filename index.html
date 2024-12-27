@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,14 +11,14 @@
       <div class="container">
         <div class="header__inner">
           <h1 class="header__logo font-prata logo">
-            <a href="/"> Гармония </a>
+            <a href="/">Гармония</a>
           </h1>
           <ul class="header__list">
             <li class="header__list-item">
-              <a href="#about">О нас</a>
+              <a href="#about">О&nbsp;нас</a>
             </li>
             <li class="header__list-item">
-              <a href="#form">Связаться с нами</a>
+              <a href="#form-section">Связаться с&nbsp;нами</a>
             </li>
             <li class="header__list-item">
               <a href="#footer">Контакты</a>
@@ -64,7 +64,7 @@
     <!-- End main & navigation panel -->
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__img about__img--first">
         <img src="/img/about/first.jpg" alt="" />
       </div>
@@ -117,7 +117,7 @@
     <!-- End about -->
 
     <!-- Form section -->
-    <section class="form-section">
+    <section class="form-section" id="form-section">
       <div class="container">
         <div class="form-section__inner">
           <form class="form">
@@ -146,22 +146,25 @@
 
             <div class="form__checkbox">
               <label class="form__checkbox-label" for="form-checkbox">
-                <span class="form__checkbox-icon"></span>
+                <input
+                  type="checkbox"
+                  name="form-checkbox"
+                  id="form-checkbox"
+                  class="form__checkbox-input js-checkbox"
+                  required
+                  checked
+                  hidden
+                />
+                <span class="form__checkbox-icon form__checkbox-icon--checked js-checkbox-icon "></span>
                 <span class="form__checkbox-text">
-                  Я принимаю <a href="">политику конфиденциальности</a>
+                  Я принимаю <a href="#">политику конфиденциальности</a>
                 </span>
               </label>
-              <input
-                type="checkbox"
-                name="form-checkbox"
-                id="form-checkbox"
-                class="form__checkbox-input"
-                required
-                hidden
-              />
             </div>
 
-            <button class="form__btn" type="submit">Отправить</button>
+            <button class="form__btn js-form-button" type="submit">
+              Отправить
+            </button>
           </form>
         </div>
       </div>

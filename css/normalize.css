@@ -31,8 +31,21 @@ button {
   cursor: pointer;
 }
 
+[disabled="true"]{
+  cursor: not-allowed;
+  opacity: .3;
+}
+
 [hidden] {
   display: none !important;
+}
+
+*:target {
+  scroll-margin-top: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,7 +54,7 @@ body {
   color: var(--main-white);
   display: flex;
   flex-direction: column;
-  gap: 5.208vw;
+  gap: clamp(50px, 5.208vw, 100px);
   min-width: 320px;
   position: relative;
 }
